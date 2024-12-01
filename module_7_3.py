@@ -5,7 +5,6 @@ class WordsFinder:
     def get_all_words(self):
         all_words = {}
         for file_name in self.file_names:
-            name = self.file_names
             with open(file_name, encoding='utf-8') as file:
                 content = file.read().lower()
                 for char in [',', '.', '=', '!', '?', ';', ':', ' - ']:
